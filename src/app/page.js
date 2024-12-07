@@ -2,12 +2,14 @@
 import Contact from '@/components/Contact';
 import Navbar from '../components/Navbar';
 import Skills from '../components/Skills';
+import Sidebar from '@/components/Sidebar';
 
 export default function HomePage() {
   return (
-    <div>
-      <Navbar />
-      
+    <div className='main-container'>
+      {/* <Navbar /> */}
+      <Sidebar/>
+     <div className='content'>
       <div id="home" className="parallax">
         <h1>Welcome to My Portfolio</h1>
       </div>
@@ -82,6 +84,7 @@ export default function HomePage() {
           <button type="submit">Send Message</button>
         </form>
       </section> */}
+      </div>
     </div>
   );
 }
